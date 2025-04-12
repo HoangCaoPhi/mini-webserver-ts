@@ -4,7 +4,7 @@ export interface MatchResult {
 }
 
 export function matchRoute(url: string, routePath: string): MatchResult | null {
-  const [urlPath] = url.split("?");  
+  const [urlPath] = url.split("?");
 
   const urlSegments = urlPath.split("/").filter(Boolean); // ["users", "123"]
   const routeSegments = routePath.split("/").filter(Boolean); // ["users", ":id"]

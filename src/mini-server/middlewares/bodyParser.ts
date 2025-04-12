@@ -1,7 +1,5 @@
-import type {
-  Middleware, 
-  RouteContext,
-} from "../router/abstraction.ts";
+import type { RouteContext } from "../abstractions/http_context.ts";
+import type { Middleware } from "../abstractions/middleware.ts";
 
 export const bodyParser: Middleware = async (
   ctx: RouteContext,
